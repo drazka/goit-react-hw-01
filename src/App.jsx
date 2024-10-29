@@ -3,10 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Profile from './components/profile/Profile'
-import userData from '.userData.json'
-import friends from '.friends.json'
+import userData from "./userData.json";
+import friends from './friends.json'
 import FriendList from './components/friendList/FriendList'
-import transactions from '.transactions.json'
+import transactions from './transactions.json'
 import TransactionHistory from './components/transactionHistory/TransactionHistory'
 
 const App = () => {

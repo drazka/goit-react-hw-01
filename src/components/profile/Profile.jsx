@@ -1,3 +1,5 @@
+const Profile = () => {
+  return (
 <div>
   <div>
     <img
@@ -24,3 +26,10 @@
     </li>
   </ul>
 </div>
+  );
+};
+
+export default Profile;
+
+
+
