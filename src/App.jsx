@@ -9,6 +9,7 @@ import FriendList from './components/friendList/FriendList'
 import transactions from './transactions.json'
 import TransactionHistory from './components/transactionHistory/TransactionHistory'
 
+
 const App = () => {
   return (
     <>

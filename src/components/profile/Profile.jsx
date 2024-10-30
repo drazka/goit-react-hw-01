@@ -1,28 +1,31 @@
-const Profile = () => {
+import clsx from "clsx";
+import css from "./Profile.module.css";
+
+const Profile = ({name, tag, location, image, stats}) => {
   return (
-<div>
-  <div>
+<div className={css.profileCard}>
+  <div className={css.profileInfo}>
     <img
-      src="<https://cdn-icons-png.flaticon.com/512/1077/1077012.png>"
+      src={image}
       alt="User avatar"
     />
-    <p>Petra Marica</p>
-    <p>@pmarica</p>
-    <p>Salvador, Brasil</p>
+    <p className={css.profileName}>{name}</p>
+    <p>@{tag}</p>
+    <p>{location}</p>
   </div>
 
-  <ul>
-    <li>
-      <span>Followers</span>
-      <span>1000</span>
+  <ul className={css.stats}>
+    <li className={clsx(css.statsElement, css.leftElem)}>
+      <span className={css.title}>Followers</span>
+      <span className={css.amount}>{stats.followers}</span>
     </li>
-    <li>
-      <span>Views</span>
-      <span>2000</span>
+    <li className={clsx(css.statsElement, css.centerElem)}>
+      <span className={css.title}>Views</span>
+      <span className={css.amount}>{stats.views}</span>
     </li>
-    <li>
-      <span>Likes</span>
-      <span>3000</span>
+    <li className={clsx(css.statsElement, css.rightElem)}>
+      <span className={css.title}>Likes</span>
+      <span className={css.amount}>{stats.likes}</span>
     </li>
   </ul>
 </div>
