@@ -6,6 +6,7 @@ const Profile = ({name, tag, location, image, stats}) => {
 <div className={css.profileCard}>
   <div className={css.profileInfo}>
     <img
+      className={css.profileAvatar}
       src={image}
       alt="User avatar"
     />

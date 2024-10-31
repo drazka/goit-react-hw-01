@@ -1,20 +1,9 @@
-* {
-    font-size: 45px;
-    font-weight: 400;
-    letter-spacing: 1px
-   
-}
-
-img {
+.profileAvatar {
     background-color: #332e3c;
     width: 270px;
     height: 270px;
     border-radius: 50%;
     margin: 20px;
-}
-
-p {
-    color:rgb(141, 141, 144);
 }
 
 .profileCard{
