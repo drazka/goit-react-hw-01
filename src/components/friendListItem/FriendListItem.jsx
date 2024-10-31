@@ -1,14 +1,14 @@
 import clsx from "clsx";
 import css from "./FriendListItem.module.css";
 
-const FriendListItem = () => {
+const FriendListItem = ({name, image, status, isOnline}) => {
 	return (
 <div className={css.friendCard}>
   <img 
     className={css.friendAvatar}
-    src="" alt="Avatar" width="48" />
-  <p className={css.friendName}>Friend name</p>
-  <p className={css.friendStatus}>Friend status</p>
+    src={image} alt="Avatar" width="48" />
+  <p className={css.friendName}>{name}</p>
+  <p className={css.friendStatus} style={{ color: isOnline ? 'green' : 'red' }} >{status}</p>
 </div>
   );
 };
