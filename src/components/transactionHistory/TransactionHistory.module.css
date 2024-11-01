@@ -2,12 +2,7 @@ tr:nth-child(even) {
     background-color: #bab8b8;
 }
 
-td, th, tr, thead, table {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-th {
+.th {
     background-color: #000000;
     color: white;
     padding: 0px;
@@ -18,7 +13,8 @@ th {
     height: 40px;
 }
 
-td {
+.td {
+    border: 1px solid black;
     font-size: 20px;
     font-weight: 500;
     height: 40px; 
@@ -30,6 +26,7 @@ td:first-child {
     text-transform: capitalize; 
 }
 
-table {
+.table {
     margin-top: 50px;
+    border-collapse: collapse;
 }
