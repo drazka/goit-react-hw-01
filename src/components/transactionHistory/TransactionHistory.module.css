@@ -1,0 +1,35 @@
+tr:nth-child(even) {
+    background-color: #bab8b8;
+}
+
+td, th, tr, thead, table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #000000;
+    color: white;
+    padding: 0px;
+    font-size: 25px;
+    font-weight: 600;
+    min-width: 300px;
+    min-height: 100px;
+    height: 40px;
+}
+
+td {
+    font-size: 20px;
+    font-weight: 500;
+    height: 40px; 
+}
+
+td:first-child {
+    text-align: left;
+    padding-left: 100px; 
+    text-transform: capitalize; 
+}
+
+table {
+    margin-top: 50px;
+}
